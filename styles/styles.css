@@ -1,0 +1,260 @@
+@import url("/styles/reset.css");
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+svg {
+  height: 3.75rem;
+}
+
+h1 {
+  font-size: 6.25rem;
+  color: black;
+}
+
+h2 {
+  font-size: 2.1875rem;
+  color: black;
+  margin-top: 2.5rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+  color: black;
+  margin-top: 1.5625rem;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.navbarContainer {
+  background-color: black;
+
+  height: 3.75rem;
+  width: 100%;
+
+  text-decoration: none;
+  position: fixed;
+}
+
+button {
+  color: black;
+  cursor: pointer;
+  position: relative;
+  margin-right: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 8.75rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: transparent;
+}
+
+button:before {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  height: 100%;
+  width: 0rem;
+  z-index: -1;
+  content: '';
+  background: #b7c9fd;
+  border-radius: 0.5rem;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+button:hover:before {
+  right: 0%;
+  left: auto;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.level1body {
+  background-image: url(/image/img1.png);
+  width: 100%;
+  height: 58.75rem;
+}
+
+.containerLevel1 {
+  display: flex;
+  justify-content: center;
+}
+
+.words {
+  padding-top: 21.875rem;
+  text-align: center;
+}
+
+.level2body {
+  background-color: #000;
+  height: 58.75rem;
+}
+
+.titleLevel2 {
+  text-align: center;
+  font-size: 3.75rem;
+  color: white;
+  padding-top: 6.25rem;
+}
+
+.containerslider {
+  width: 62.5rem;
+  height: 37.5rem;
+  margin: 3.125rem auto 0 auto;
+}
+
+.buttonslider {
+  text-align: center;
+}
+
+.baloons {
+  color: #000;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.balooncontent {
+  background-color: white;
+  text-align: center;
+  height: 2.5rem;
+  width: 12.5rem;
+  font-weight: bold;
+  border-radius: 1.25rem;
+  transition: 0.5s;
+  padding-top: 1.25rem;
+}
+
+.balooncontent:hover {
+  background-color: grey;
+}
+
+.containerLevel3 {
+  height: 33.75rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 12.5rem;
+}
+
+.gift {
+  height: 25rem;
+  width: 37.5rem;
+}
+
+.btnDescription {
+  margin-top: 7.8125rem;
+  height: 3.125rem;
+  width: 18.75rem;
+}
+
+.btnDescription:hover {
+  background-color: rgb(4, 179, 4);
+}
+
+@media screen and (max-width: 62.5rem) {
+  .containerslider {
+    width: 31.25rem;
+    height: 12.5rem;
+    margin: 3.125rem auto 0 auto;
+  }
+  .baloons {
+    display: grid;
+    margin-top: 9.375rem;
+  }
+  .baloon {
+    margin-top: 0.9375rem;
+  }
+  .balooncontent {
+    width: 21.875rem;
+  }
+}
+
+@media screen and (max-width: 50rem) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12.5rem;
+    align-items: center;
+    height: 15rem;
+  }
+
+  .baloons {
+    display: grid;
+    margin-top: 9.375rem;
+  }
+  .baloon {
+    margin-top: 0.625rem;
+  }
+  .balooncontent {
+    width: 21.875rem;
+  }
+}
+
+@media screen and (max-width: 37.5rem) {
+  .gift {
+    width: 25rem;
+  }
+  .navbarContainer {
+    width: 37.5rem;
+  }
+  .words {
+    margin-top: 8.125rem;
+  }
+  .containerLevel3 {
+    height: 21.25rem;
+  }
+  .btnDescription {
+    margin-left: 2.1875rem;
+  }
+  button {
+    width: 6.25rem;
+  }
+  h1 {
+    font-size: 3.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5625rem;
+  }
+  
+  h3 {
+    font-size: 1.5625rem;
+  }
+}
+
+@media screen and (max-width: 31.25rem) {
+  .containerslider {
+    width: 18.75rem;
+    height: 6.25rem;
+  }
+  .gift {
+    width: 18.75rem;
+  }
+  .words {
+    padding-top: 18.75rem;
+  }
+  .navbarContainer {
+    display: grid;
+    width: 31.25rem;
+    height: 12.5rem;
+  }
+  button{
+    width: 12.5rem;
+  }
+}
